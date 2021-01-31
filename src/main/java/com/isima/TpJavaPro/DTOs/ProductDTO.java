@@ -10,6 +10,6 @@ import java.io.Serializable;
 @Getter
 @Setter
 public class ProductDTO implements Serializable {
-    private String generic_name_fr;
+    private String product_name;
     private NutritionScoreDTO nutriments;
 }

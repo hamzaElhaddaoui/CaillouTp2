@@ -14,6 +14,4 @@ public interface RuleRepository extends JpaRepository<Rule, Long> {
     @Query("SELECT MAX(points) FROM Rule WHERE name= :name AND min_bound< :minBound")
     int retirePoint(@Param("name") String name,@Param("minBound") double minBound);
 
-    @Query("SELECT r FROM Rule r WHERE name= :name AND min_bound< :minBound")
-    List<Rule> retireRule(@Param("name") String name, @Param("minBound") double minBound);
 }

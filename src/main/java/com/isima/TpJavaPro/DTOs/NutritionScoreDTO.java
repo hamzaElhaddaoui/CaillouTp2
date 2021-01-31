@@ -12,20 +12,17 @@ import java.io.Serializable;
 @Setter
 public class NutritionScoreDTO implements Serializable {
 
-    @SerializedName(value="nutrition-score-fr")
-    private String nutritionScore;
-
-    @SerializedName(value = "salt_100g")
-    private double salt_100g;
-
-    @SerializedName(value= "sugars_100g")
-    private double sugars_100g;
+    @SerializedName(value="energy_100g")
+    private double energy_100g;
 
     @SerializedName(value="saturated-fat_100g")
     private double saturatedFat_100g;
 
-    @SerializedName(value="energy_100g")
-    private double energy_100g;
+    @SerializedName(value= "sugars_100g")
+    private double sugars_100g;
+
+    @SerializedName(value = "salt_100g")
+    private double salt_100g;
 
     @SerializedName(value="fiber_100g")
     private double fiber_100g;
